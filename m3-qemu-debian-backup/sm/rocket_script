@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export KEYSTONE_SM=/home/jzmoolman/src/keystone/sm
+export KEYSTONE_SDK_DIR=$KEYSTONE_SM/sdk
+
+PATH="/home/jzmoolman/src/keystone/build-rocket64/buildroot.build/per-package/opensbi/host/bin:/home/jzmoolman/src/keystone/build-rocket64/buildroot.build/per-package/opensbi/host/sbin:/home/jzmoolman/miniforge3/bin:/home/jzmoolman/miniforge3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games" CROSS_COMPILE=/home/jzmoolman/src/keystone/build-rocket64/buildroot.build/per-package/opensbi/host/bin/riscv64-buildroot-linux-gnu-  PLATFORM=fpga/rocket FW_PAYLOAD_PATH="/home/jzmoolman/src/keystone/build-rocket64/buildroot.build/images/Image" PLATFORM_DIR=/home/jzmoolman/src/keystone/build-rocket64/buildroot.build/build/keystone-sm-43b3677480fe9345//plat/ PLATFORM_RISCV_TOOLCHAIN_DEFAULT=1 /usr/bin/make -j9 -C /home/jzmoolman/src/keystone/build-rocket64/buildroot.build/build/opensbi-1.3
+
